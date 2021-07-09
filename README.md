@@ -21,11 +21,16 @@ issues, as well as missing features.
 
 # Installation
 
-First, download this project to your computer. 
-Create a folder named simple-invoice-application inside your Xampp htdocs folder and transfer all the downloaded files to it.
+Project Location ``Xampp/htdocs``
 
+**Step 1: Download**
 
-**Step 1: Update base url**
+Using command line
+```
+git clone https://github.com/Munzir-devs/simple-invoice-application.git
+```
+
+**Step 2: Update base url**
 
 ```php
 // path : application/config/config.php
@@ -34,13 +39,13 @@ Create a folder named simple-invoice-application inside your Xampp htdocs folder
 $config['base_url'] = '';
 ```
 
-**Step 2: Create database**
+**Step 3: Create database**
 
 ```
 Open PHPMyAdmin and create a database called simple-invoice-application.
 ```
 
-**Step 3: Create tables**
+**Step 4: Create tables**
 
 ```mysql
 --Run this query
@@ -86,7 +91,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 ```
 
-**Step 4: Config Database Connection**
+**Step 5: Config Database Connection**
 ```php
 // path : application/config/database.php
 // Change username if necessary
