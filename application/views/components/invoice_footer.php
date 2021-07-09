@@ -15,22 +15,22 @@ if (isset($total)) {
 			<tr>
 				<th>Subtotal</th>
 				<td>&nbsp;:&nbsp;</td>
-				<td><?=isset($sub_total) ? '$'.$sub_total : '-'?></td>
+				<td id="subtotal"><?=isset($sub_total) ? '$'.$sub_total : '-'?></td>
 			</tr>
 			<tr>
 				<th>Taxes</th>
 				<td>&nbsp;:&nbsp;</td>
-				<td><?=isset($taxes) ? '$'.$taxes : '-'?></td>
+				<td id="taxes"><?=isset($taxes) ? '$'.$taxes : '-'?></td>
 			</tr>
 			<tr>
 				<th>Discount</th>
 				<td>&nbsp;:&nbsp;</td>
-				<td><?=isset($discount) ? '$'.$discount : '-'?> <?=isset($discount_percentage) ? '('.$discount_percentage.'%)' : ''?></td>
+				<td id="total_discount"><?=isset($discount) ? '$'.$discount : '-'?> <?=isset($discount_percentage) ? '('.$discount_percentage.'%)' : ''?></td>
 			</tr>
 			<tr>
 				<th>Total</th>
 				<td>&nbsp;:&nbsp;</td>
-				<td><?=isset($total) ? '$'.$total : '-'?></td>
+				<td id="total"><?=isset($total) ? '$'.$total : '-'?></td>
 			</tr>
 		</table>
 	</div>
