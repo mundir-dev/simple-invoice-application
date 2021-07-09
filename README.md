@@ -104,4 +104,6 @@ $db['default'] = array(
 );
 ```
 
+**Step 5: The application is ready to launch**
 
+Open your favourite browser and enter the project URL.
